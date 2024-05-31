@@ -18,6 +18,9 @@ function addBookmark() {
     };
 
     if(validateBookmark(bookmarksNameField) && validateBookmark(bookmarksURLField)) {
+        if (!bookmark.bookmarkURL.startsWith('https://')) {
+            bookmark.bookmarkURL = 'https://' + bookmark.bookmarkURL;
+        }
         bookmarks.push(bookmark);
         localStorage.setItem('bookmarks',JSON.stringify(bookmarks));
         displayBookmarks();
