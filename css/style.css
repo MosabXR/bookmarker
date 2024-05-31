@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: PT-Sans-Caption-Bold;
+    src: url('../fonts/PT_Sans_Caption/PTSansCaption-Bold.ttf');
+}
+
+@font-face {
+    font-family: PT-Sans-Caption-Regular;
+    src: url('../fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf');
+}
+
+@font-face {
+    font-family: Righteous-Regular;
+    src: url('../fonts/Righteous/Righteous-Regular.ttf');
+}
+
+:root {
+    --custom-beige: #f7ecde;
+    --custom-yellow: #fec260;
+    --custom-grey: #352e28;
+    --custom-font-pacifico-regular: Pacifico-Regular;
+    --custom-font-pt-sans-caption-regular: PT-Sans-Caption-Regular;
+    --custom-font-pt-sans-caption-bold: PT-Sans-Caption-Bold;
+    --custom-font-righteous-regular: Righteous-Regular;
+    --custom-font-size-7: 3.125rem;
+}
+
+.ff-pacifico-regular {
+    font-family: var(--custom-font-pacifico-regular) !important;
+}
+
+.ff-righteous-regular {
+    font-family: var(--custom-font-righteous-regular) !important;
+}
+
+.ff-pt-sans-caption-regular {
+    font-family: var(--custom-font-pt-sans-caption-regular);
+}
+
+.fs-7 {
+    font-size: var(--custom-font-size-7);
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+.bg-beige {
+    background-color: var(--custom-beige);
+}
+
+.bookmark-header,
+.bookmark-body {
+    border-bottom: 2px dotted #000;
+}
+
+.title {
+    width: fit-content;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: var(--custom-yellow);
+    z-index: -1;
+    transition: height 0.5s ease;
+}
+
+.title:hover::before {
+    height: 65%;
+}
+
+.mini-title {
+    background-image: linear-gradient(to right, #3ca55c 40% , #b5ac49 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-form-control:focus {
+    border: .0625rem solid var(--custom-yellow) !important;
+    box-shadow: 0 0 0 .25rem rgb(254, 194, 96, 0.333) !important;
+}

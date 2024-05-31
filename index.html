@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bookmark</title>
+</head>
+
+<body class="ff-pt-sans-caption-regular">
+    <main>
+        <section class="min-vh-100 bg-beige">
+            <div class="container h-100">
+                <div class="bookmark-header py-5 d-flex justify-content-center">
+                    <h1 class="title my-3 position-relative z-1 ff-pacifico-regular fs-7">Bookmarker</h1>
+                </div>
+                <div class="bookmark-body p-3">
+                    <h2 class="mini-title text-center ff-righteous-regular fs-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                    <div class="mb-3">
+                        <label for="bookmarksNameField" class="form-label fw-bold">
+                            <i class="fa-solid fa-book-bookmark"></i> Site Name
+                        </label>
+                        <input type="text" class="form-control custom-form-control" id="bookmarksNameField"
+                            placeholder="Bookmark Name" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookmarksURLField" class="form-label fw-bold">
+                            <i class="fa-solid fa-link"></i> Site URL
+                        </label>
+                        <input type="text" class="form-control custom-form-control" id="bookmarksURLField"
+                            placeholder="Website URL" >
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <button id="addBookmarkBtn" class="btn btn-danger px-5">Submit</button>
+                    </div>
+                </div>
+                <div class="bookmark-footer py-5">
+                    <table class="table text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Index</th>
+                            <th scope="col">Website Name</th>
+                            <th scope="col">Visit</th>
+                            <th scope="col">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
