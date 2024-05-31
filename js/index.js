@@ -86,8 +86,10 @@ function clearFields() {
     bookmarksNameField.value = null;
     bookmarksURLField.value = null;
 
-    bookmarksNameField.classList.remove('is-valid','is-invalid').add('custom-form-control');
-    bookmarksURLField.classList.remove('is-valid','is-invalid').add('custom-form-control');
+    bookmarksNameField.classList.remove('is-valid', 'is-invalid');
+    bookmarksNameField.classList.add('custom-form-control');
+    bookmarksURLField.classList.remove('is-valid', 'is-invalid');
+    bookmarksURLField.classList.add('custom-form-control')
 }
 
 // Event Listeners
